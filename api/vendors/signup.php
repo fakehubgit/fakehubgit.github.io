@@ -10,6 +10,11 @@
     $statement = $connect->prepare($sql);
     $statement->execute([$login, $email, $password]);
 
+    print " ==== POST DATA =====
+    Email : $email
+    Login  : $login
+    Pass  : $password";
+
     $_SESSION['message'] = 'Регистрация прошла успешно!';
     header('Location: ../../index.php');
 ?>
