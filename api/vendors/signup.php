@@ -2,9 +2,9 @@
     session_start();
     require_once('connect.php');
 
-    $login = $_POST["login"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
+    $login = urldecode($_POST["login"]);
+    $email = urldecode($_POST["email"]);
+    $password = urldecode($_POST["password"]);
 
     $sql = "INSERT INTO users (login, email, password) VALUES (?, ?, ?)";
     $statement = $connect->prepare($sql);
