@@ -1,0 +1,86 @@
+.intro
+    min-height: 100%
+    @include background("../images/intro-bg.jpg")
+    color: #fff
+    position: relative
+
+    &__content
+        padding-top: 100px
+        text-align: center
+
+    &__title
+        font-size: 3.5em
+        text-transform: uppercase
+        margin-bottom: 50px
+
+    &-list
+        margin-bottom: 100px
+
+        &__item
+            display: inline-block
+            font-size: 1.2em
+            letter-spacing: 2px
+
+            &::after
+                content: ''
+                display: inline-block
+                vertical-align: middle
+                width: 7px
+                height: 7px
+                margin-left: 15px
+                margin-right: 15px
+                background-color: #fff
+                border-radius: 50%
+
+            &:last-child
+                &::after
+                    display: none
+
+    &__link
+        display: block
+        text-decoration: underline
+        font-size: 1.3em
+        margin-bottom: 15px
+    
+    &__arrow
+        display: block
+        img
+            width: 35px
+            height: 35px
+
+.buttons
+    display: flex
+    flex-direction: column
+    max-width: 350px
+    margin: 0 auto
+    margin-bottom: 80px
+
+    .button
+        margin-bottom: 10px
+
+@media screen and (max-width: 800px)
+
+    .intro
+
+        &__title
+            font-size: 3em
+            line-height: 1.2em
+
+    .intro
+        &-list
+            margin-bottom: 100px
+
+            &__item
+                display: block
+
+                &::after
+                    margin: 8px auto
+                    display: block
+                    
+
+@media screen and (max-width: 500px)
+    .intro
+
+        &__title
+            font-size: 2.5em
+            line-height: 1.2em

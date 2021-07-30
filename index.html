@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DCraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/slider/slick-theme.css" rel="stylesheet">
+    <link href="styles/slider/slick.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet" >
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo logo" href="#">
+                    Craft3D
+                </a>
+
+                <nav class="header__nav nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Магазин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__contacts contacts">
+                    <div class="contacts__column">
+                        <a class="contacts__link contacts__icon--share" href="#">
+                            <img class="contacts__icon" src="images/share.svg" alt="Share">
+                        </a>
+                    </div>
+                    <div class="contacts__column">
+                        <a class="contacts__link contacts__link--email" href="mailto:#">
+                            <img class="contacts__icon" src="images/message.svg" alt="Email">
+                            example@example.com
+                        </a>
+                        <a class="contacts__link contacts__link--tel" href="tel:#">
+                            <img class="contacts__icon" src="images/tel.svg" alt="Telephone">
+                            +7 (333) 333-333
+                        </a>
+                    </div>
+                </div>
+
+                <div class="toggle-button" id="toggle-button">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div>
+            </div> <!-- ./header__content -->
+        </div> <!-- ./container -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro__content">
+                <h1 class="intro__title">Изготовление изделий из пластика на заказ</h1>
+
+                <ul class="intro__list intro-list">
+                    <li class="intro-list__item">срок от 1 дня</li>
+                    <li class="intro-list__item">низкая минимальная сумма</li>
+                    <li class="intro-list__item">доставка по России и Новосибирску</li>
+                </ul>
+
+                <div class="buttons">
+                    <a class="button button--dark" href="#">Магазин готовой продукции</a>
+                    <a class="button button--blue" href="#">Узнать стоимость онлайн</a>
+                </div>
+
+                <a class="intro__link" href="#">Не знаете, что выбрать?</a>
+                <a class="intro__arrow" href="#">
+                    <img src="images/arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- INTRO END -->
+
+    <!-- ORDER-PROCEDURE -->
+    <section class="order-procedure section">
+        <div class="order-procedure__head section__head">
+            <h2 class="section__title">Заказ в пару шагов</h2>
+        </div>
+        <div class="order-procedure__body section__body">
+            <div class="order-procedure__item order-procedure__item--choose">
+                <img class="order-procedure__icon" src="images/upload.svg" alt="Icon">
+                <p class="order-procedure__descr">1. Загрузить модели</p>
+            </div>
+            <div class="order-procedure__item order-procedure__item--upload">
+                <img class="order-procedure__icon" src="images/settings.svg" alt="Icon">
+                <p class="order-procedure__descr">2. Выберите материал и проведите настройку</p>
+            </div>
+            <div class="order-procedure__item order-procedure__item--arrange">
+                <img class="order-procedure__icon" src="images/money.svg" alt="Icon">
+                <p class="order-procedure__descr">3. Узнайте стоимость, сроки и оформите заказ онлайн</p>
+            </div>
+            <div class="order-procedure__item order-procedure__item--get">
+                <img class="order-procedure__icon" src="images/parcel.svg" alt="Icon">
+                <p class="order-procedure__descr">4. Получите готовые изделия</p>
+            </div>
+        </div>
+    </section>
+    <!-- ORDER-PROCEDURE END -->
+
+    <!-- WHAT CHOOSE -->
+    <section class="what-choose">
+        <div class="what-choose__head section__head">
+            <h2 class="section__title">Не знаете, что выбрать?</h2>
+        </div>
+        <div class="what-choose__body section__body">
+            <div class="what-choose__column">
+                <p class="what-choose__descr">Напишите или позвоните <a href="telto:">+7 (333) 333-333 </a> нам</p>
+                <p class="what-choose__descr">Мы изучим заявку и поможем подобрать <br> оптимальное решение.</p>
+            </div>
+            <div class="what-choose__column">
+                <a class="button button--blue" href="#">Отправить</a>
+            </div>
+        </div>
+    </section>
+    <!-- WHAT CHOOSE END -->
+
+    <!-- BENEFITS -->
+    <section class="benefits section">
+        <div class="benefits__head section__head">
+            <h2 class="section__title">Наши преимущества</h2>
+        </div>
+        <div class="container">
+            <div class="benefits__body section__body">
+                <div class="benefits__item benefits-item">
+                    <div class="benefits-item__icon-wrapper">
+                        <img class="benefits-item__icon" src="images/deliveryCourer.svg">
+                    </div>
+                    <p class="benefits-item__descr">Доставка по городу</p>
+                </div>
+                <div class="benefits__item benefits-item">
+                    <div class="benefits-item__icon-wrapper">
+                        <img class="benefits-item__icon" src="images/deliveryRussia.svg">
+                    </div>
+                    <p class="benefits-item__descr">Доставка по России</p>
+                </div>
+                <div class="benefits__item benefits-item">
+                    <div class="benefits-item__icon-wrapper">
+                        <img class="benefits-item__icon" src="images/calendar.svg">
+                    </div>
+                    <p class="benefits-item__descr">Срок выполнения от 1 дня</p>
+                </div>
+                <div class="benefits__item benefits-item">
+                    <div class="benefits-item__icon-wrapper">
+                        <img class="benefits-item__icon" src="images/money.svg">
+                    </div>
+                    <p class="benefits-item__descr">Online расчёт стоимости</p>
+                </div>
+                <div class="benefits__item benefits-item">
+                    <div class="benefits-item__icon-wrapper">
+                        <img class="benefits-item__icon" src="images/money.svg">
+                    </div>
+                    <p class="benefits-item__descr">Низкая минимальная стоимость</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BENEFITS END -->
+
+    <!-- STATUS -->
+    <section class="status section">
+        <div class="status__head section__head">
+            <h2 class="section__title">Проверка статуса заказа</h2>
+        </div>
+        <div class="container">
+            <div class="status__body section__body">
+                <form class="status__form" action="#">
+                    <input class="status__input" type="text" placeholder="Номер">
+                    <a class="button button--dark"href="#" >Проверить</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- STATUS END -->
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section">
+        <div class="portfolio__head section__head">
+            <h2 class="section__title">Наши работы</h2>
+        </div>
+        <div class="portfolio__container container">
+            <div class="portfolio__body section__body">
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--second">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--third">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+            </div> <!-- ./portfolio__body -->
+
+            <div class="portfolio__body section__body">
+                <div class="portfolio__row portfolio__row--first">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--second">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+
+                <div class="portfolio__row portfolio__row--third">
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+
+                    <div class="portfolio__item portfolio-item">
+                        <div class="portfolio-item__head">
+                            <img class="portfolio-item__pic" src="images/portfolio-1.png" alt="Picture">
+                            <p class="portfolio-item__title">Название продукции, которую сделали</p>
+                        </div>
+                        <div class="portfolio-item__body">
+                            <div class="portfolio-item__weight">
+                                <img class="portfolio-item__icon" src="images/weight.svg" alt="Icon">
+                                <p class="portfolio-item__descr">10 грамм</p>
+                            </div>
+                            <div class="portfolio-item__term">
+                                <img class="portfolio-item__icon" src="images/calendar-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2 дня</p>
+                            </div>
+                            <div class="portfolio-item__price">
+                                <img class="portfolio-item__icon" src="images/money-dark.svg" alt="Icon">
+                                <p class="portfolio-item__descr">2000 рублей</p>
+                            </div>
+                        </div>
+                    </div> <!-- ./ portfolio-item -->
+                </div> <!-- ./portfolio__row -->
+            </div> <!-- ./portfolio__body -->
+        </div> <!-- ./portfolio__container -->
+    </section>
+    <!-- PORTFOLIO END -->
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

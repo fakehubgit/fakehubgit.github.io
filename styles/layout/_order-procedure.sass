@@ -1,0 +1,58 @@
+.order-procedure
+    
+    &__body
+        display: flex
+        flex-wrap: wrap
+    
+    &__item
+        width: 25%
+        min-height: 150px
+        padding: 20px 0
+        text-align: center
+
+        &--choose
+            background-color: #29CFE5
+
+        &--upload
+            background-color: #008bac
+
+        &--arrange
+            background-color: #00617D
+
+        &--get
+            background-color: #3B3C4E
+
+
+    &__icon
+        text-align: center
+        width: 80px
+        height: 80px
+        padding-bottom: 5px
+
+    &__descr
+        color: #fff
+        font-size: 1.3em
+        padding: 0 15px
+        line-height: 1.4em
+        text-align: center
+
+@media screen and (max-width: 1000px)
+
+    .order-procedure
+        &__item
+            padding-top: 30px
+            padding-bottom: 30px
+        &__icon
+            width: 60px
+            height: 60px
+
+@media screen and (max-width: 769px)
+    .order-procedure
+        &__item
+            width: 50%
+
+    
+@media screen and (max-width: 500px)
+    .order-procedure
+        &__item
+            width: 100%

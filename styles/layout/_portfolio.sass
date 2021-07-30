@@ -1,0 +1,133 @@
+.portfolio
+    background-color: #fff
+
+    &__container
+        padding: 0 50px
+    &__head
+
+    &__body
+        display: flex
+        flex-wrap: wrap
+
+    &__row
+        width: 100%
+        margin-bottom: 45px
+        display: flex
+        justify-content: space-around
+
+.portfolio-item
+    max-width: 28%
+    text-align: center
+    border: 2px solid #000
+    border-radius: 30px
+    word-wrap: break-word
+    
+    &__head
+        border-bottom: 1px solid #111
+        padding: 0 20px
+
+    &__pic
+        display: block
+        width: 100%
+
+    &__title
+        margin: 15px 0
+        font-size: 1.3em
+        font-style: italic
+
+    &__body
+        padding: 20px
+        display: flex
+        justify-content: space-between
+
+    &__icon
+        width: 35px
+        height: 35px
+        margin-bottom: 5px
+        text-align: center
+
+    &__descr
+        font-size: 1.2em
+
+/**********/
+/* SLIDER */
+/**********/
+.slick-initialized .slick-slide
+    display: flex
+
+.slick-prev,
+.slick-next
+    width: 48px
+    height: 48px
+    border-color: #000
+    position: absolute
+    top: 50%
+    margin-top: -31px
+    border-bottom: 8px solid
+    border-left: 8px solid
+    right: 10px
+    color: #000
+    transition: color 0.3s ease
+
+    &:after,
+    &::before
+        display: none
+
+    &:hover,
+    &:active,
+        color: #9E9DA4
+
+    &:focus
+        color: #000
+
+.slick-prev
+    transform: rotate(45deg)
+    left: 0
+.slick-next
+    transform: rotate(-135deg)
+    right: 0
+
+
+@media screen and (max-width: 1300px)
+    .slick-prev
+        transform: rotate(45deg)
+        left: 30px
+    .slick-next
+        transform: rotate(-135deg)
+        right: 30px
+
+@media screen and (max-width: 1000px)
+    .slick-prev
+        transform: rotate(45deg)
+        left: 30px
+    .slick-next
+        transform: rotate(-135deg)
+        right: 30px
+
+    .portfolio
+
+        &__row
+            justify-content: center
+
+        &__item
+            margin-right: 30px
+            max-width: 40%
+
+    .portfolio-item:nth-child(2n)
+        margin-right: 0
+
+    .portfolio-item:nth-child(3n)
+        display: none
+
+
+@media screen and (max-width: 768px)
+    .portfolio-item
+        max-width: 60%
+    .portfolio-item
+        margin-right: 0
+    .portfolio-item:nth-child(2n)
+        display: none
+
+@media screen and (max-width: 500px)
+    .portfolio-item
+        max-width: 80%
