@@ -78,9 +78,9 @@ body.lock {
 }
 
 .section__title {
-  text-align: center;
-  text-transform: uppercase;
   font-size: 1.8em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*****************/
@@ -248,15 +248,15 @@ body.lock {
 
 @media screen and (max-width: 900px) {
   .header__nav {
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    visibility: hidden;
     background-color: #181818;
-    opacity: 0;
-    z-index: 5;
   }
   .nav__list {
     width: 100%;
@@ -309,13 +309,13 @@ body.lock {
 }
 
 .intro {
+  position: relative;
   min-height: 100%;
   background-image: url("../images/intro-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  position: relative;
 }
 
 .intro__content {
@@ -324,9 +324,9 @@ body.lock {
 }
 
 .intro__title {
+  margin-bottom: 50px;
   font-size: 3.5em;
   text-transform: uppercase;
-  margin-bottom: 50px;
 }
 
 .intro-list {
@@ -342,11 +342,11 @@ body.lock {
 .intro-list__item::after {
   content: '';
   display: inline-block;
-  vertical-align: middle;
   width: 7px;
   height: 7px;
   margin-left: 15px;
   margin-right: 15px;
+  vertical-align: middle;
   background-color: #fff;
   border-radius: 50%;
 }
@@ -357,9 +357,9 @@ body.lock {
 
 .intro__link {
   display: block;
-  text-decoration: underline;
-  font-size: 1.3em;
   margin-bottom: 15px;
+  font-size: 1.3em;
+  text-decoration: underline;
 }
 
 .intro__arrow {
@@ -380,8 +380,7 @@ body.lock {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 350px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
 }
 
 .buttons .button {
@@ -400,8 +399,8 @@ body.lock {
     display: block;
   }
   .intro-list__item::after {
-    margin: 8px auto;
     display: block;
+    margin: 8px auto;
   }
 }
 
@@ -444,18 +443,18 @@ body.lock {
 }
 
 .order-procedure__icon {
-  text-align: center;
   width: 80px;
   height: 80px;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .order-procedure__descr {
-  color: #fff;
-  font-size: 1.3em;
   padding: 0 15px;
+  font-size: 1.3em;
   line-height: 1.4em;
   text-align: center;
+  color: #fff;
 }
 
 @media screen and (max-width: 1000px) {
@@ -498,25 +497,25 @@ body.lock {
 }
 
 .what-choose__column {
-  padding: 30px 0;
   width: 50%;
+  padding: 30px 0;
 }
 
 .what-choose__column .button {
+  margin-left: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-left: 30px;
 }
 
 .what-choose__descr {
-  text-align: right;
   font-size: 1.3em;
   line-height: 1.5em;
+  text-align: right;
 }
 
 .what-choose__descr a {
-  text-decoration: underline;
   font-weight: 700;
+  text-decoration: underline;
   color: #3a3c4e;
 }
 
@@ -528,21 +527,21 @@ body.lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .what-choose__column {
     width: 100%;
-    text-align: center;
     padding: 15px 0;
+    text-align: center;
   }
   .what-choose__descr {
     text-align: center;
@@ -566,8 +565,6 @@ body.lock {
 }
 
 .benefits-item {
-  text-align: center;
-  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,14 +578,11 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 20%;
+  text-align: center;
 }
 
 .benefits-item__icon-wrapper {
-  width: 80px;
-  height: 80px;
-  background-color: #3D3E4F;
-  border-radius: 50%;
-  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,14 +592,17 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80px;
+  height: 80px;
   margin-bottom: 30px;
+  padding: 15px;
+  background-color: #3D3E4F;
+  border-radius: 50%;
 }
 
 .benefits-item__icon {
   width: 50px;
   height: 50px;
-  fill: #fff;
-  color: #fff;
 }
 
 .benefits-item__descr {
@@ -672,8 +669,8 @@ body.lock {
 }
 
 .status__input {
-  margin-bottom: 15px;
   width: 100%;
+  margin-bottom: 15px;
   padding: 5px;
   text-align: center;
   outline: none;
@@ -703,26 +700,26 @@ body.lock {
 }
 
 .portfolio__row {
-  width: 100%;
-  margin-bottom: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  width: 100%;
+  margin-bottom: 45px;
 }
 
 .portfolio-item {
   max-width: 28%;
   text-align: center;
+  word-wrap: break-word;
   border: 2px solid #000;
   border-radius: 30px;
-  word-wrap: break-word;
 }
 
 .portfolio-item__head {
-  border-bottom: 1px solid #111;
   padding: 0 20px;
+  border-bottom: 1px solid #111;
 }
 
 .portfolio-item__pic {
@@ -737,13 +734,13 @@ body.lock {
 }
 
 .portfolio-item__body {
-  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px;
 }
 
 .portfolio-item__icon {
@@ -768,16 +765,15 @@ body.lock {
 
 .slick-prev,
 .slick-next {
-  width: 48px;
-  height: 48px;
-  border-color: #000;
   position: absolute;
   top: 50%;
+  width: 48px;
+  height: 48px;
   margin-top: -31px;
+  color: #000;
   border-bottom: 8px solid;
   border-left: 8px solid;
-  right: 10px;
-  color: #000;
+  border-color: #000;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -841,8 +837,8 @@ body.lock {
             justify-content: center;
   }
   .portfolio__item {
-    margin-right: 30px;
     max-width: 40%;
+    margin-right: 30px;
   }
   .portfolio-item:nth-child(2n) {
     margin-right: 0;
