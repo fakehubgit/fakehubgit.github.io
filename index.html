@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DCraft</title>
+    <title>3DCraft | Главная</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="styles/slider/slick-theme.css" rel="stylesheet">
     <link href="styles/slider/slick.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__content">
                 <a class="header__logo logo" href="#">
@@ -23,13 +23,13 @@
                 <nav class="header__nav nav" id="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Главная</a>
+                            <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Магазин</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Доставка и оплата</a>
+                            <a class="nav__link" href="delivery.html">Доставка и оплата</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="#">Контакты</a>
@@ -66,7 +66,7 @@
     <!-- HEADER END -->
 
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id=intro>
         <div class="container">
             <div class="intro__content">
                 <h1 class="intro__title">Изготовление изделий из пластика на заказ</h1>
@@ -92,7 +92,7 @@
     <!-- INTRO END -->
 
     <!-- ORDER-PROCEDURE -->
-    <section class="order-procedure section">
+    <section class="order-procedure section section--white">
         <div class="order-procedure__head section__head">
             <h2 class="section__title">Заказ в пару шагов</h2>
         </div> <!-- ./order-procedure__head -->
@@ -124,7 +124,7 @@
     <!-- ORDER-PROCEDURE END -->
 
     <!-- WHAT CHOOSE -->
-    <section class="what-choose">
+    <section class="what-choose section">
         <div class="what-choose__head section__head">
             <h2 class="section__title">Не знаете, что выбрать?</h2>
         </div> <!-- ./what-choose__head -->
@@ -145,7 +145,7 @@
     <!-- WHAT CHOOSE END -->
 
     <!-- BENEFITS -->
-    <section class="benefits section">
+    <section class="benefits section section--white">
         <div class="benefits__head section__head">
             <h2 class="section__title">Наши преимущества</h2>
         </div> <!-- ./benefits__head -->
@@ -209,7 +209,7 @@
     <!-- STATUS END -->
 
     <!-- PORTFOLIO -->
-    <section class="portfolio section">
+    <section class="portfolio section section--white">
         <div class="portfolio__head section__head">
             <h2 class="section__title">Наши работы</h2>
         </div> <!-- ./portfolio__head -->
@@ -614,8 +614,102 @@
     </section>
     <!-- PORTFOLIO END -->
 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__column footer-contacts">
+                    <div class="footer-contacts__item contacts">
+                        <div class="contacts__column">
+                            <a class="contacts__link contacts__link--email" href="mailto:#">
+                                example@example.com
+                            </a>
+                            <a class="contacts__link contacts__link--tel" href="tel:#">
+                                +7 (333) 333-333
+                            </a>
+                        </div>
+                    </div> <!-- ./footer__contacts -->
+
+                    <address class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Новосибирск, ул. Троллейная, д. 7, под. 4</p>
+                        <p class="footer-contacts__descr">м. Площадь Маркса</p>
+                    </address>
+
+                    <div class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Работаем по будням с 09:00 до 20:00</p>
+                        <p class="footer-contacts__descr">Выдача заказов по субботам и воскресеньям не производится</p>
+                    </div>
+                </div> <!-- ./footer-column -->
+
+                <div class="footer__column footer-payment">
+                    <div class="footer-payment__title">
+                        Безналичная оплата
+                    </div>
+
+                    <div class="footer-payment__content">
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/mir.svg" alt="МИР">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/visa.png" alt="VISA">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/yandexmoney.png" alt="ЯндексДеньги">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/mastercard.svg" alt="MasterCard">
+                        </div>
+                    </div>
+                </div> <!-- ./footer-column -->
+
+                <nav class="footer__column footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Магазин</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Расчёт онлайн</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Статус заказа</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Автотовары</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+                </nav> <!-- ./footer-column -->
+
+            </div> <!-- ./footer__content -->
+
+            <a href="#intro" class="button-to-top">
+                <img class="button-to-top__arrow" src="images/arrow.svg" alt="Arrow">
+            </a>
+        </div> <!-- ./container -->
+    </footer>
+    <!-- FOOTER END -->
+
     <script src="libs/jquery.min.js"></script>
     <script src="libs/slick.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
 </body>
 </html>

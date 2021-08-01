@@ -1,8 +1,10 @@
 .portfolio
-    background-color: #fff
 
     &__container
         padding: 0 50px
+
+    &__head
+        padding-bottom: 40px
 
     &__body
         display: flex
@@ -65,7 +67,7 @@
     border-bottom: 8px solid
     border-left: 8px solid
     border-color: #000
-    transition: color 0.3s ease
+    transition: border-color 0.3s ease
 
     &:after,
     &::before
@@ -73,7 +75,7 @@
 
     &:hover,
     &:active,
-        color: #9E9DA4
+        border-color: #9E9DA4
 
     &:focus
         color: #000

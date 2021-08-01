@@ -1,0 +1,92 @@
+.delivery
+    padding-top: 120px
+    padding-bottom: 30px
+    font-size: 1.3em
+    line-height: 1.3em
+
+    &__title
+        margin-bottom: 40px
+        font-size: 1.8em
+        text-transform: uppercase
+
+
+.delivery-block
+    padding-top: 50px
+
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 50px
+
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 500px
+        max-width: 500px
+        min-height: 200px
+        margin-bottom: 30px
+        padding: 40px
+        border: 1px solid #000
+
+        &:last-child
+            margin-bottom: 0
+
+    &__icon
+        padding-right: 40px
+    
+    &__pic
+        display: block
+        width: 70px
+        height: 70px
+
+    &__descr
+
+    &__text
+
+        &--link
+            color: inherit
+            text-decoration: underline
+
+
+.text-padding
+    padding-top: 15px
+
+.descr-title
+    font-weight: 700
+
+    &--block
+        display: block
+    
+    &--inline
+        display: inline
+
+.payment-block
+    padding-top: 70px
+
+    &__text
+        margin-bottom: 5px
+
+    &__list
+        margin-top: 20px
+    
+    &__item
+        position: relative
+        padding-left: 40px
+        margin-bottom: 25px
+        
+        &:last-child
+            margin-bottom: 0
+
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            display: block
+            width: 15px
+            height: 15px
+            background-color: #0c2333
+            border-radius: 100%

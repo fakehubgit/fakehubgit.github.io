@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DCraft | Доставка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet" >
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo logo" href="#">
+                    Craft3D
+                </a> <!-- ./header__logo -->
+
+                <nav class="header__nav nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Магазин</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav> <!-- ./header__nav -->
+
+                <div class="header__contacts contacts">
+                    <div class="contacts__column">
+                        <a class="contacts__link contacts__icon--share" href="#">
+                            <img class="contacts__icon" src="images/share.svg" alt="Share">
+                        </a>
+                    </div>
+                    <div class="contacts__column">
+                        <a class="contacts__link contacts__link--email" href="mailto:#">
+                            <img class="contacts__icon" src="images/message.svg" alt="Email">
+                            example@example.com
+                        </a>
+                        <a class="contacts__link contacts__link--tel" href="tel:#">
+                            <img class="contacts__icon" src="images/tel.svg" alt="Telephone">
+                            +7 (333) 333-333
+                        </a>
+                    </div>
+                </div> <!-- ./header__contacts -->
+
+                <div class="toggle-button" id="toggle-button">
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                    <div class="toggle-button__item"></div>
+                </div> <!-- ./toggle-button-->
+            </div> <!-- ./header__content -->
+        </div> <!-- ./container -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- DELIVERY -->
+    <section class="delivery" id="delivery">
+        <div class="container">
+            <div class="delivery__content">
+
+                <div class="delivery-block">
+                    <h1 class="delivery__title">Доставка</h1>
+
+                    <div class="delivery-block__content">
+
+                        <div class="delivery-block__item">
+                            <div class="delivery-block__icon">
+                                <img class="delivery-block__pic" src="images/deliveryRussia-blue.svg" alt="Icon">
+                            </div>
+                            <div class="delivery-block__descr">
+                                <p class="delivery-block__text">
+                                    <span class="descr-title descr-title--block">Самовызов в Новосибирске:</span>
+                                    м. Площадь Маркса, ул. Троллейная, д. 7, под. 4
+                                </p>
+                                <p class="delivery-block__text">
+                                    Выдача заказов по субботам и воскресеньям не производится.
+                                </p>
+                            </div>
+                        </div> <!-- ./delivery-block__item -->
+
+                        <div class="delivery-block__item">
+                            <div class="delivery-block__icon">
+                                <img class="delivery-block__pic" src="images/deliveryRussia-blue.svg" alt="Icon">
+                            </div>
+                            <div class="delivery-block__descr">
+                                <p class="delivery-block__text">
+                                    <span class="descr-title descr-title--inline">Доставка по России</span>
+                                    осуществляется транспортной компанией (СДЭК или другие по согласованию).
+                                </p>
+                            </div>
+                        </div> <!-- ./delivery-block__item -->
+
+                        <div class="delivery-block__item">
+                            <div class="delivery-block__icon">
+                                <img class="delivery-block__pic" src="images/deliveryRussia-blue.svg" alt="Icon">
+                            </div>
+                            <div class="delivery-block__descr">
+                                <p class="delivery-block__text">
+                                    <span class="descr-title descr-title--inline">Доставка курьером</span>
+                                    оплачивается по факту в момент вызова курьера (Достависта, Яндекс.Доставка и т.д.).
+                                </p>
+                                <p class="delivery-block__text text-padding">
+                                    Вызов курьера может быть осуществлен нами или заказчиком.
+                                </p>
+                            </div>
+                        </div> <!-- ./delivery-block__item -->
+
+                    </div> <!-- ./delivery-block__content -->
+
+                    <p class="delivery-block__text">
+                        Если вам не подходит ни один из предложенных способов доставки, свяжитесь с нами<br>по телефону <a class="delivery-block__text--link"href="telto:">+7 (555) 555-555</a>, мы что-нибудь придумаем.
+                    </p>
+                </div>  <!-- ./delivery-block -->
+
+                <div class="payment-block">
+                    <h2 class="delivery__title">Оплата</h2>
+
+                    <div class="payment-block__content">
+                        <p class="payment-block__text">Минимальная сумма заказа на 3D печать - 500 рублей.</p>
+                        <p class="payment-block__text">Стоимость доставки не включается в минимальную сумму заказа.</p>
+                        <p class="payment-block__text text-padding">Заказы, оформленные на нашем сайте, могут быть оплачены следующими способами:</p>
+
+                        <ul class="payment-block__list">
+                            <li class="payment-block__item">Оплата банковскими картами Visa, Maestro и MasterCard</li>
+                            <li class="payment-block__item">Через платежную систему Яндекс.Деньги</li>
+                            <li class="payment-block__item">Наличными можно оплатить только при самовызове</li>
+                        </ul>
+                    </div>
+                </div> <!-- ./payment-block -->
+
+            </div> <!-- ./delivery__content -->
+        </div> <!-- ./container -->
+    </section>
+    <!-- DELIVERY END -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__column footer-contacts">
+                    <div class="footer-contacts__item contacts">
+                        <div class="contacts__column">
+                            <a class="contacts__link contacts__link--email" href="mailto:#">
+                                example@example.com
+                            </a>
+                            <a class="contacts__link contacts__link--tel" href="tel:#">
+                                +7 (333) 333-333
+                            </a>
+                        </div>
+                    </div> <!-- ./footer__contacts -->
+
+                    <address class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Новосибирск, ул. Троллейная, д. 7, под. 4</p>
+                        <p class="footer-contacts__descr">м. Площадь Маркса</p>
+                    </address>
+
+                    <div class="footer-contacts__item">
+                        <p class="footer-contacts__descr">Работаем по будням с 09:00 до 20:00</p>
+                        <p class="footer-contacts__descr">Выдача заказов по субботам и воскресеньям не производится</p>
+                    </div>
+                </div> <!-- ./footer-column -->
+
+                <div class="footer__column footer-payment">
+                    <div class="footer-payment__title">
+                        Безналичная оплата
+                    </div>
+
+                    <div class="footer-payment__content">
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/mir.svg" alt="МИР">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/visa.png" alt="VISA">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/yandexmoney.png" alt="ЯндексДеньги">
+                        </div>
+                        <div class="footer-payment__item">
+                            <img class="footer-payment__icon" src="images/mastercard.svg" alt="MasterCard">
+                        </div>
+                    </div>
+                </div> <!-- ./footer-column -->
+
+                <nav class="footer__column footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Магазин</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Расчёт онлайн</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="#">Автотовары</a>
+                        </li>
+                    </ul> <!-- ./footer-nav__list -->
+                </nav> <!-- ./footer-column -->
+
+            </div> <!-- ./footer__content -->
+
+            <a href="#delivery" class="button-to-top">
+                <img class="button-to-top__arrow" src="images/arrow.svg" alt="Arrow">
+            </a>
+        </div> <!-- ./container -->
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
+</body>
+</html>
